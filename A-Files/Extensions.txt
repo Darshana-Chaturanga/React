@@ -1,0 +1,15 @@
+VSCODE
+Prettier Code Formatter
+ESLint
+LiveServer
+TailwindCSS
+ES7 + React Snippets
+Code Spell Checker
+Git Graph
+Todo Tree
+Import Cost
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/padding
+
+https://webreference.com/javascript/basics/versions/
