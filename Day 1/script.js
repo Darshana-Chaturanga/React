@@ -59,19 +59,47 @@
 // console.log(myArrayExtend);
 
 //  /*optional chaining*/ 
-let person = {
-     name : "Nimal" , 
-     age : 23 , 
-     data : {
-          sId : "s19004541", 
-          token : "asd123",
-          createdAt : "2025.03.05",
-          images : ["213123234","3243465456","567675634"]
-     }
-};
+// let person = {
+//      name : "Nimal" , 
+//      age : 23 , 
+//      data : {
+//           sId : "s19004541", 
+//           token : "asd123",
+//           createdAt : "2025.03.05",
+//           images : ["213123234","3243465456","567675634"]
+//      }
+// };
 
-console.log(person?.data?.email ?? "no data"); //nullish colletion
+// console.log(person?.data?.email ?? "no data"); //nullish colletion
 
+//   /*DOM manipulation*/
+
+const startTime = performance.now();
+
+//set local storage
+localStorage.setItem("username" , "Darshana Chaturanga");
+
+//get local storage
+console.log("user name is " + localStorage.getItem("username"));
+
+document.addEventListener("DOMContentLoaded", (event) => {
+
+     const endTime = performance.now();
+     const loadTime = (endTime - startTime).toFixed(2);
+
+     console.log(`DOM load time : ${loadTime} ms`);
+     console.log(event);
+
+     // DOM elements
+     const mainTitle = document.querySelector("#main-title");
+     console.log(mainTitle);
+
+     const btn = document.querySelector("#btn");
+     btn.addEventListener("click", ()=>{
+          //change the main title
+          mainTitle.textContent = "Changed Title";           
+     });
+});
 
 
 
