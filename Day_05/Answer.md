@@ -113,7 +113,7 @@ JSX (JavaScript XML) is a syntax extension for JavaScript, commonly used with Re
 
 ```jsx
 const element = <h1>Hello, World!</h1>;
-
+```
 # Introduction to Node.js and npm
 
 Node.js and npm (Node Package Manager) are essential tools for modern JavaScript development. They enable developers to build scalable server-side applications and manage dependencies efficiently.
